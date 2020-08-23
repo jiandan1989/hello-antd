@@ -1,0 +1,33 @@
+.wrapper {
+  background-color: #fff;
+  padding: 24px;
+
+  .select_wrapper {
+    color: red;
+  }
+}
+
+.label_content {
+  line-height: 1;
+  padding: 5px;
+  font-size: 12px;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  user-select: none;
+
+  .label {
+    background-color: red;
+  }
+
+  .colon {
+    &::after {
+      content: ':';
+    }
+  }
+
+  .content {
+    flex: 100%;
+    background-color: green;
+  }
+}
